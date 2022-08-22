@@ -276,6 +276,51 @@ footer ul li a:hover {
   overflow: hidden;
 }
 
+.mobile-only {
+  display: none;
+}
+
+.mobile-main-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background-color: #000;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-main-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 50px;
+  width: 100%;
+}
+
+.mobile-main-menu ul li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: dotted 1px #555;
+  width: 100%;
+  text-align: right;
+  padding-bottom: 8px;
+}
+
+.mobile-main-menu ul li a {
+  color: #fff;
+  transition: color 0.6s;
+}
+
+.mobile-main-menu ul li a:hover {
+  color: #aaa;
+}
+
 /* Animations */
 
 @keyframes fadeInUp {
@@ -312,6 +357,10 @@ footer ul li a:hover {
   /* Hide desktop menu */
   .desktop-main-menu {
     display: none;
+  }
+
+  .mobile-only {
+    display: block;
   }
 }
 
